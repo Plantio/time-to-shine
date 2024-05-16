@@ -1,0 +1,42 @@
+body{
+    background-color: #4E5674;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: grid;
+    grid-template-areas: [main left] "div" [main right]
+                         [main left] "div1" [main right]
+                         [main left] "div2" [main right]
+                         [main left] "div3" [main right]
+                         [main left] "footer" [main right];
+}
+h1{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: gray;
+}
+footer{
+    text-align: right;
+}
+div{
+    text-align: center;
+}
+#lien1{
+
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px;
+}
+#lien2{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px;
+}
+#lien3{
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 30px;
+}
