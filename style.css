@@ -2,12 +2,8 @@ body{
     background-color: #4E5674;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    display: grid;
-    grid-template-areas: [main left] "div" [main right]
-                         [main left] "div1" [main right]
-                         [main left] "div2" [main right]
-                         [main left] "div3" [main right]
-                         [main left] "footer" [main right];
+    display: flex;
+    flex-direction: column;
 }
 h1{
     color: black;
@@ -15,28 +11,35 @@ h1{
     text-align: center;
     background-color: gray;
 }
-footer{
-    text-align: right;
-}
-div{
+.menu{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-#lien1{
+.lien1 {
+    background-color: transparent;
+    color: black;
 
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 30px;
 }
-#lien2{
-    border-color: black;
-    border-width: 1px;
+.bouton{
+    background-color: transparent;
+    color: black;
+    border: 3px;
     border-style: solid;
     border-radius: 30px;
+    padding: 5px 10px;
 }
-#lien3{
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 30px;
+.bouton:hover{
+    background-color: white;
+    color: black;
+}
+
+.loicopie{
+    display: flex;
+    flex-direction: row;
+    gap: 360px;
+}
+.année{
+    align-items: end;
 }
